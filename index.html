@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/⏳" />
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="300" class="timer__button">5</button>
+      <button data-time="600" class="timer__button">10</button>
+      <button data-time="1800" class="timer__button">30</button>
+
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Custom minutes">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
