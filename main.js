@@ -39,7 +39,7 @@ function displayTimeLeft(seconds) {
 
 function displayEndTime(timestamp) {
     const end = new Date(timestamp);
-    const hour = end.getHours();
+    const hour = end.getHours().toLocaleString("en-US", {timeZone: "America/New_York"});
     const minutes = end.getMinutes();
 
     endTime.textContent = `Be back at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}${minutes} ET`
