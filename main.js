@@ -1,3 +1,8 @@
+// TO DO
+// get time zone/utc offset of whatever computer is displaying the countdown timer to properly show return time
+// add rf music to play at the last minute
+// change display when it's the last minute for emphasis
+
 let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
