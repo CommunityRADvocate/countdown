@@ -42,7 +42,7 @@ function displayEndTime(timestamp) {
     const hour = end.getHours().toLocaleString("en-US", {timeZone: "America/New_York"});
     const minutes = end.getMinutes();
 
-    endTime.textContent = `Be back at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}${minutes} ET`
+    endTime.textContent = `Be back at ${hour > 12 ? hour - 12 : hour}:${minutes < 10 ? '0' : ''}${minutes}`
 }
 
 function startTimer() {
